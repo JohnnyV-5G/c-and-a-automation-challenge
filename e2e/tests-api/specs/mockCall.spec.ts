@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import dotenv from 'dotenv';
 
 dotenv.config();
-test.skip("Test Suite: Mock set for setups", () => {
+test.skip("Test Suite: Mock test for setups", () => {
     test('Search movie (TMDB v3)', async ({ request }) => {
         const apiKey = process.env.TMDB_V3_KEY!;
         const url = `https://api.themoviedb.org/3/search/movie?query=avatar&api_key=${apiKey}`;

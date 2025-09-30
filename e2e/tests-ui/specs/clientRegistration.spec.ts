@@ -28,12 +28,10 @@ test.describe("Test Suite: Spanish Client Registration - C&A Web", () => {
     await handleCountryPopup(page, Countries.list.spain);
   });
 
-
-  test("Test Case: registration step - invalid email", {
-    tag: '@unhappy-path', }, async ({ page }) => {
-      const homePage = new HomePage(page);
-      const myAccount = new MyAccountPage(page);
-      const preRegistration = new RegistrationPage(page);
+  test("Test Case: registration step - invalid email", { tag: '@unhappy-path', }, async ({ page }) => {
+    const homePage = new HomePage(page);
+    const myAccount = new MyAccountPage(page);
+    const preRegistration = new RegistrationPage(page);
 
       await test.step('Client clicks on the my account button', async() => {
         await homePage.clickAccountButton();
@@ -52,8 +50,7 @@ test.describe("Test Suite: Spanish Client Registration - C&A Web", () => {
       });
   });
 
-  test("Test Case: registration step - invalid personal information, password and email", {
-    tag: '@unhappy-path', }, async ({ page }) => {
+  test("Test Case: registration step - invalid personal information, password and email", { tag: '@unhappy-path', }, async ({ page }) => {
       const homePage = new HomePage(page);
       const myAccount = new MyAccountPage(page);
       const registration = new RegistrationPage(page);
@@ -95,8 +92,7 @@ test.describe("Test Suite: Spanish Client Registration - C&A Web", () => {
       });
   });
 
-  test("Test Case: Validate Registration functionality", {
-    tag: '@happy-path', }, async ({ page }) => {
+  test("Test Case: Validate Registration functionality", { tag: '@happy-path', }, async ({ page }) => {
       const homePage = new HomePage(page);
       const myAccount = new MyAccountPage(page);
       const registration = new RegistrationPage(page);
@@ -130,5 +126,4 @@ test.describe("Test Suite: Spanish Client Registration - C&A Web", () => {
 
   test.fixme("Test Case: Client deletes data", async ({ page }) => {
   });
-
 });

@@ -4,7 +4,6 @@
 ************************************************************************************************************
 _Documentation written by Juan Vazquez_
 
-
 This repository utilizes Playwright for end-to-end automation. 
 
 What is [Playwright](https://playwright.dev/)? 
