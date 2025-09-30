@@ -1,5 +1,5 @@
 import { test, expect } from '../fixtures/homePage.fixture';
-import { AppUrls } from '../utils/constants';
+import { CnA_URLS } from '../utils/constants';
 import { Countries } from '../utils/countries';
 import { faker } from '@faker-js/faker';
 import { HomePage } from '../poms/homePage.page';
@@ -15,7 +15,7 @@ const salutations: ('MR' | 'MRS' | 'OTHER')[] = ['MR', 'MRS', 'OTHER'];
 
 test.describe("Test Suite: Spanish Client Registration - C&A Web", () => {
   test.beforeEach(async ({ page, handleCountryPopup, handleCookieBanner, setCookieConsent, context }) => {
-    await page.goto(AppUrls.HOME);
+    await page.goto(CnA_URLS.HOME);
 
     // Setup the handler to dismiss the cookie banner automatically
     await page.addLocatorHandler(page.locator('#onetrust-banner-sdk'), async (locator) => {

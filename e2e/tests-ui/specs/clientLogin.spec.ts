@@ -1,5 +1,5 @@
 import { test, expect } from '../fixtures/homePage.fixture';
-import { AppUrls } from '../utils/constants';
+import { CnA_URLS } from '../utils/constants';
 import { Countries } from '../utils/countries';
 import { HomePage } from '../poms/homePage.page';
 import { MyAccountPage } from '../poms/myAccount.page';
@@ -15,7 +15,7 @@ const MISSING_EMAIL = "";
 
 test.describe("Test Suite: Spanish Client LogIn - C&A Web", () => {
   test.beforeEach(async ({ page, handleCountryPopup, handleCookieBanner, setCookieConsent, context }) => {
-    await page.goto(AppUrls.HOME);
+    await page.goto(CnA_URLS.HOME);
     await handleCountryPopup(page, Countries.list.spain);
 
     // // Setup the handler to dismiss the cookie banner automatically
