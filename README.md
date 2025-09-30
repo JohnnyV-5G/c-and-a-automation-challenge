@@ -113,7 +113,7 @@ Copy `.env.example` to `.env` and set your credentials:
 
 2. Request and Create Access token [TMDB Token generator](https://developer.themoviedb.org/v4/docs/authentication-user)
 
-step 3:the built in auth doesn't always work. Manually paste this curl into your terminal.
+3. the built in auth doesn't always work. Manually paste this curl into your terminal.
 curl --request POST \
   --url https://api.themoviedb.org/4/auth/access_token \
   --header "Authorization: Bearer <your_v4_read_access_token>" \
